@@ -31,5 +31,7 @@ fetch(jsonUrl)
         if(json.icons == undefined)
         {
             iconElement.src = iconUrl;
+        }else{
+            iconElement.src = json.icons;
         }
     });
