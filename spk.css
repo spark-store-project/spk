@@ -60,6 +60,7 @@ button.b1{
     color: #fff;
     position: relative;
     cursor: pointer;
+    margin-left: 4px;
 }
 
 #icon {
