@@ -9,6 +9,21 @@ function goSPK(){
     window.location.href=GetQueryString("spk");
 }
 
+function copySPK(){
+    const el = document.createElement('input')
+    // 给input元素赋值需要复制的文本
+    el.setAttribute('value', GetQueryString("spk"))
+    // 将input元素插入页面
+    document.body.appendChild(el)
+    // 选中input元素的文本
+    el.select()
+    // 复制内容到剪贴板
+    document.execCommand('copy')
+    // 删除input元素
+    document.body.removeChild(el)
+    alert('复制成功')
+}
+
 //调用 
 var spk=GetQueryString("spk");
 var newspk=spk;
